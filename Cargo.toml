@@ -1,0 +1,9 @@
+[package]
+name = "hangman"
+version = "0.1.0"
+authors = ["FlyingCanoe <31600343+FlyingCanoe@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+crossterm = "0.6.0"
+rand = "0.6.5"
