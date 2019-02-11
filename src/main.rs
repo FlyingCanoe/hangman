@@ -1,13 +1,30 @@
 use rand::Rng;
 use std::io;
 
+enum Fond {
+    Fond(),
+    Hide(),
+}
+
+struct Hengman_char {
+    char: char,
+    fond: Fond,
+}
+
+fn hengman_char(c : char) -> Hengman_char {
+    let a = Hengman_char {
+        char: c,
+        fond: Fond::Hide,
+        
+    }
+}
 
 fn main() {
     let mut rng = rand::thread_rng();
     let word_list = ["pome", "patate"];
     let x = rng.gen_range(0, word_list.len()-1);
 
-    let mut word :Vec<char> = vec!();
+    let mut word :Vec<> = vec!();
     for i in word_list[x].chars() {
         word.push(i);
         print!("*");
@@ -42,8 +59,12 @@ fn main() {
             input_vec.push(i)
         }
 
+        let match_fond = false;
+
         for letter in word.clone() {
-            
+            if input_vec[0] == letter {
+                
+            }
         }
     }
 }
